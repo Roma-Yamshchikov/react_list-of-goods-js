@@ -20,7 +20,7 @@ export const App = () => {
   const [sortBy, setSortBy] = useState('');
   const [isReversed, setIsReversed] = useState(false);
 
-  const resert = () => {
+  const reset = () => {
     setSortBy('');
     setIsReversed(false);
   };
@@ -80,7 +80,7 @@ export const App = () => {
           <button
             type="button"
             className="button is-danger is-light"
-            onClick={resert}
+            onClick={reset}
           >
             Reset
           </button>
